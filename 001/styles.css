@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Open-Sans';
+    src: url('https://fonts.googleapis.com/css?family=Open+Sans:700,300');
+}
+
+body {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    border: 1px solid red;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 20%;
+    height: 50%;
+    display: grid;
+    grid-template-rows: 13% 17% 20%;
+    text-align: center;
+}
+
+.container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right,#2a99ef,#52d9e5);
+    opacity: 1; 
+}
+
+span {
+    margin-top: 40%;
+    position: relative;
+}
+
+.title {
+    font-size: 3.5rem;
+}
+
+.subtitle {
+    font-size: 2rem;
+}
+
